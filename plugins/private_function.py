@@ -3,6 +3,7 @@
 #𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
 #𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
 
+
 import random
 import re
 import requests
@@ -320,84 +321,7 @@ async def baseprivate(c: Client, m: Message):
             await m.reply_text("◍ انت لست المطور الاساسي\n√")
             return
             
-    
-                                    else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-
-    if m.text == "الجروبات ‌✯":
-        if secsudo(m):
-            await get_num_group(m, c)
-        else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-
-    if m.text == "المشتركين ⁦‌✯":
-        if secsudo(m):
-            await get_num_user(m)
-        else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-
-    if m.text == "قائمه الحظر العام ‌✯":
-        if sudo2(m):
-            lang = get_db_gban()
-            if lang is None:
-                await m.reply_text("◍ لايوجد محظورين عام\n√")
-            else:
-                t = "\n◍ قائمة المحظورين عام \n≪━━━━━━━━━━━━━≫\n"
-                for row in lang:
-                    t = t + f"[{row[1]}](tg://user?id={row[0]})\n"
-                await m.reply_text(t, parse_mode=enums.ParseMode.MARKDOWN)
-            return
-        else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-
-    if m.text == "قائمه الكتم العام ‌✯":
-        if sudo2(m):
-            lang = get_db_gmute()
-            if lang is None:
-                await m.reply_text("◍ لا يوجد مكتومين عام\n√")
-            else:
-                t = "\n◍ قائمة الكتم العام \n≪━━━━━━━━━━━━━≫\n"
-                for row in lang:
-                    t = t + f"[{row[1]}](tg://user?id={row[0]})\n"
-                await m.reply_text(t, parse_mode=enums.ParseMode.MARKDOWN)
-            return
-        else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-
-    if m.text == "اضف رد عام ‌✯":
-        if secsudo(m):
-            await addgeneralrep(m)
-        else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-
-    if m.text == "حذف رد عام ‌✯":
-        if secsudo(m):
-            await delgeneralrep(m)
-        else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-
-    if m.text == "الردود العامه ‌✯" or m.text == "الردود العامه":
-        if sudo2(m):
-            lang = get_db_greply()
-            if lang is None:
-                await m.reply_text("◍ لا توجد ردود عامه")
-            else:
-                t = "\n◍ قائمة الردود العامه \n≪━━━━━━━━━━━━━≫\n"
-                for row in lang:
-                    t = t + f"({row[0]})--->({row[1]})\n"
-                await m.reply_text(t)
-            return
-        else:
-            await m.reply_text("◍ انت لست المطور\n√")
-            return
-if m.text == "قفل الكيبورد":
+    if m.text == "قفل الكيبورد":
         if secsudo(m):
             await m.reply_text("◍ تم قفل الكيبورد لفتحه مره اخري اضغط /start\n√", reply_markup= ReplyKeyboardRemove(selective=True))
         else:
@@ -423,11 +347,11 @@ if m.text == "قفل الكيبورد":
             lang = get_db_general_rtb("developer")
             n = await c.get_users(sudoers[0])
             if lang is None:
-                await m.reply_text(f"◍ [BoDa](tg://user?id={super_sudoers[0]})\n" +
+                await m.reply_text(f"◍ [Medo](tg://user?id={super_sudoers[0]})\n" +
                                        f"◍ [{n.first_name}](tg://user?id={sudoers[0]})\n\n"
                                    "لا يوجد مطورين مرفوعين\n√", parse_mode=enums.ParseMode.MARKDOWN)
             else:
-                t = "\n◍ قائمة المطورين \n≪━━━━━━━━━━━━━≫\n" + f"◍ [BoDa](tg://user?id={super_sudoers[0]})\n" + \
+                t = "\n◍ قائمة المطورين \n≪━━━━━━━Medo━━━━━━≫\n" + f"◍ [Medo](tg://user?id={super_sudoers[0]})\n" + \
                     f"◍ [{n.first_name}](tg://user?id={sudoers[0]})\n\n√"
                 for row in lang:
                     t = t + f"[{row[1]}](tg://user?id={row[0]})\n"
@@ -744,10 +668,6 @@ if m.text == "قفل الكيبورد":
 #𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
 #𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
   
-########################################################################################################################
-########################################################################################################################
-
-  
 
     if m.text == "تغيير المطور الاساسي" or m.text == "تغير المطور الاساسي":
         if sudo(m):
@@ -758,7 +678,6 @@ if m.text == "قفل الكيبورد":
             await m.reply_text("◍ هذا الامر للمطور الاساسي فقط\n√")
             return
 
-        
     if m.text == "رتبتي" or m.text == "رتبتى":
         await m.reply_text("◍ رتبتك في البوت » " + await get_Rank(m))
         return
@@ -781,7 +700,7 @@ if m.text == "قفل الكيبورد":
                             await m.reply_text("◍ نعم حبيبى المميز 🥺❤️\n√")
                         else:
                             if get_db_botname() is None:
-                                botname = "اوليفياء"
+                                botname = "ميدو"
                             else:
                                 botname = get_db_botname()
                             await m.reply_text("اسمى " + botname + " ياحب 🙄❤️")
@@ -812,7 +731,9 @@ if m.text == "قفل الكيبورد":
         await command(c, m)
         return
 
-    
+    if m.text == "قرءان" or m.text == "قران" or m.text == "قرآن" or m.text == "القرآن" or m.text == "القرءان":
+        await quran(c, m)
+        return
 
     if m.text == "استوري" or m.text == "ستوري":
         await status(c, m)
@@ -930,6 +851,10 @@ if m.text == "قفل الكيبورد":
     await allreply_for_bot(c, m)
 
 
+#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @l2_2Y
+#𝙳𝙴𝚅 𝙰𝙱𝙳𝙾𝚘 : @II_U_6
+#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
+#𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
     if m.text == "حظر" and m.reply_to_message:
         if secsudo(m):
             await privbanrep(m)
@@ -965,7 +890,10 @@ if m.text == "قفل الكيبورد":
             return
 
 
-
+#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @l2_2Y
+#𝙳𝙴𝚅 𝙰𝙱𝙳𝙾𝚘 : @II_U_6
+#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
+#𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
     if m.text == "حذف داتابيز المحظورين":
         if sudo(m):
             del_db_banallall()
@@ -1048,7 +976,10 @@ if m.text == "قفل الكيبورد":
             return
 
 
-
+#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @l2_2Y
+#𝙳𝙴𝚅 𝙰𝙱𝙳𝙾𝚘 : @II_U_6
+#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
+#𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
     if await lock_locksendmsg_test() and not sudo2(m):
         if m.text or m.photo or m.video or m.animation or m.audio or m.voice or m.document or m.contact or\
                 m.reply_markup or m.game:
