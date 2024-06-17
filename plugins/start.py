@@ -14,7 +14,7 @@ async def startsudo(c: Client, m: Message):
         t = """💌╖اهلا بيك حبيبي آلمـطـور
 ⚙️╢ تقدر تتحكم باوامر البوت عن طريق
 🔍╢ الكيبورد اللي ظهرلك تحت ↘
-🔰╜ للدخول لقناة السورس [دوس هنا](t.me/l2_2Y)"""
+🔰╜ للدخول لقناة السورس [دوس هنا](t.me/I1_35)"""
         keyboard = ReplyKeyboardMarkup(keyboard=[
             [KeyboardButton(" قفل الكيبورد")],
             [KeyboardButton("تعطيل التواصل")] +
@@ -63,11 +63,11 @@ async def startsudo(c: Client, m: Message):
 async def start(c: Client, m: Message):
     await confirm_user(c, m)
     if m.chat.type == enums.ChatType.PRIVATE:
-        botname = get_db_botname() or "بودا"
+        botname = get_db_botname() or "ميدو"
         x = f"""
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 🎤╖ أهلآ بك عزيزي أنا بوت {botname}
-⚙️╢لتفعيل كيب الاعضاء اضغط /AbdoX 
+⚙️╢لتفعيل كيب الاعضاء اضغط /Medo 
 🫧╢ وظيفتي حماية المجموعات
 ✅╢ لتفعيل البوت عليك اتباع مايلي 
 🔘╢ أضِف البوت إلى مجموعتك
@@ -106,11 +106,11 @@ async def start_back(c: Client, m: CallbackQuery):
 async def infos(c: Client, m: CallbackQuery):
     res = """
 ╭──── • 𖥻 • ────╮
-𖥻 [SoUrCe BoDa](t.me/l2_2Y)
-𖥻 [GrOuP SoUrCe](t.me/CVCVCVUI)
-𖥻 [DeV SoUrCe](t.me/II_U_6)
+𖥻 [SoUrCe BoDa](t.me/I1_35)
+𖥻 [GrOuP SoUrCe](t.me/I1_35)
+𖥻 [DeV SoUrCe](t.me/EU_ET)
 ╰──── • 𖥻 • ────╯
-𖥻 WelCoMe To SoUrCe BoDa Music .
+𖥻 WelCoMe To SoUrCe  Music .
         """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton("« عوده", callback_data="start_back")]])
     await m.message.edit_text(res, reply_markup=keyboard, disable_web_page_preview=True, parse_mode=enums.ParseMode.MARKDOWN)
