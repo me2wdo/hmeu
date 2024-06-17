@@ -19,41 +19,41 @@ async def startsudo(c: Client, m: Message):
         t = """💌╖اهلا بيك حبيبي آلمـطـور
 ⚙️╢ تقدر تتحكم باوامر البوت عن طريق
 🔍╢ الكيبورد اللي ظهرلك تحت ↘
-🔰╜ للدخول لقناة السورس [دوس هنا](t.me/I1_35)"""
-        keyboard = ReplyKeyboardMarkup(keyboard=[
-            [KeyboardButton(" قفل الكيبورد ‌✯")],
-            [KeyboardButton("تعطيل التواصل ‌✯")] +
-            [KeyboardButton("تفعيل التواصل ‌✯")],
-            [KeyboardButton("تعطيل الاذاعه ‌✯")] +
-            [KeyboardButton("تفعيل الاذاعه ‌✯")],
-            [KeyboardButton("تعطيل اليوتيوب ‌✯")] +
-            [KeyboardButton("تفعيل اليوتيوب ‌✯")],
-            [KeyboardButton("المطورين ‌✯")],
-            [KeyboardButton("اذاعه خاص ‌✯")] +
-            [KeyboardButton("اذاعه بالمجموعات ‌✯")],
-            [KeyboardButton("اذاعه بالتوجيه خاص ‌✯")] +
-            [KeyboardButton("اذاعه بالتوجيه للمجموعات ⁦️⁩‌✯")],
-            [KeyboardButton("اذاعه موجهه بالتثبيت⁦️⁩ ‌✯")] +
-            [KeyboardButton("اذاعه بالتثبيت ‌✯")],
-            [KeyboardButton("الاحصائيات ‌✯")],
-            [KeyboardButton("المشتركين ‌✯")] +
-            [KeyboardButton("الجروبات ‌✯")],
-            [KeyboardButton("حذف الاعضاء الفيك ‌✯")] +
-            [KeyboardButton("حذف الجروبات الفيك ‌✯")],
-            [KeyboardButton("حذف رد عام ‌✯")] +
-            [KeyboardButton("اضف رد عام ‌✯")],
-            [KeyboardButton("الردود العامه ‌✯")],
-            [KeyboardButton("قائمه الكتم العام ‌✯")] +
-            [KeyboardButton("قائمه الحظر العام ‌✯")],
-            [KeyboardButton("ضع اسم للبوت ‌✯")],
-            [KeyboardButton("معلومات السيرفر ‌✯")] +
-            [KeyboardButton("سرعه السيرفر ‌✯")],
-            [KeyboardButton("جلب نسخه احتياطيه اساسيه ‌✯")],
-            [KeyboardButton("رفع نسخه احتياطيه ‌✯")],
-            [KeyboardButton("الاصدار ‌✯")] +
-            [KeyboardButton("تحديث السورس ‌✯")],
-            [KeyboardButton("رستر البوت ‌✯")],
-            [KeyboardButton("الغاء ‌✯")],
+🔰╜ للدخول لقناة السورس [دوس هنا](t.me/I1_35)"""keyboard = ReplyKeyboardMarkup(keyboard=[
+            [KeyboardButton(" قفل الكيبورد")],
+            [KeyboardButton("تعطيل التواصل")] +
+            [KeyboardButton("تفعيل التواصل")],
+            [KeyboardButton("تعطيل الاذاعه")] +
+            [KeyboardButton("تفعيل الاذاعه")],
+            [KeyboardButton("تعطيل اليوتيوب")] +
+            [KeyboardButton("تفعيل اليوتيوب")],
+            [KeyboardButton("المطورين")],
+            [KeyboardButton("اذاعه خاص")] +
+            [KeyboardButton("اذاعه بالمجموعات")],
+            [KeyboardButton("اذاعه بالتوجيه خاص")] +
+            [KeyboardButton("اذاعه بالتوجيه للمجموعات")],
+            [KeyboardButton("اذاعه موجهه بالتثبيت⁦️⁩")] +
+            [KeyboardButton("اذاعه بالتثبيت")],
+            [KeyboardButton("الاحصائيات")],
+            [KeyboardButton("المشتركين")] +
+            [KeyboardButton("الجروبات")],
+            [KeyboardButton("حذف الاعضاء الفيك")] +
+            [KeyboardButton("حذف الجروبات الفيك")],
+            [KeyboardButton("حذف رد عام")] +
+            [KeyboardButton("اضف رد عام")],
+            [KeyboardButton("الردود العامه")],
+            [KeyboardButton("قائمه الكتم العام")] +
+            [KeyboardButton("قائمه الحظر العام")],
+            [KeyboardButton("ضع اسم للبوت")],
+            [KeyboardButton("معلومات السيرفر")] +
+            [KeyboardButton("سرعه السيرفر")],
+            [KeyboardButton("جلب نسخه احتياطيه اساسيه")],
+            [KeyboardButton("رفع نسخه احتياطيه")],
+            [KeyboardButton("الاصدار")] +
+            [KeyboardButton("تحديث السورس")],
+            [KeyboardButton("رستر البوت")],
+            [KeyboardButton("الغاء")],
+        ],
         ],
             resize_keyboard=True,
             one_time_keyboard=False
@@ -108,13 +108,20 @@ async def start_back(c: Client, m: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex("^infos$"))
-       res = """
-╭──── • ‌✯ • ────╮
-𖥻 [SoUrCe BoDa](t.me/I1_35)
-𖥻 [G SoUrCe](t.me/CVCVCVUI)
-𖥻 [DeV SoUrCe](t.me/EU_ET)
-╰──── • ‌✯ • ────╯
-𖥻 WelCoMe To SoUrCe  Music .
+       res = """
+
+╭──── • ‌✯ • ────╮
+
+𖥻 [SoUrCe BoDa](t.me/I1_35)
+
+𖥻 [G SoUrCe](t.me/CVCVCVUI)
+
+𖥻 [DeV SoUrCe](t.me/EU_ET)
+
+╰──── • ‌✯ • ────╯
+
+𖥻 WelCoMe To SoUrCe  Music .
+
         """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton("« عوده", callback_data="start_back")]])
     await m.message.edit_text(res, reply_markup=keyboard, disable_web_page_preview=True, parse_mode=enums.ParseMode.MARKDOWN)
