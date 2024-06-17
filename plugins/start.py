@@ -110,7 +110,7 @@ async def infos(c: Client, m: CallbackQuery):
 𖥻 [GrOuP SoUrCe](t.me/I1_35)
 𖥻 [DeV SoUrCe](t.me/EU_ET)
 ╰──── • 𖥻 • ────╯
-𖥻 WelCoMe To SoUrCe  Music .
+𖥻 WelCoMe To SoUrCe Music .
         """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton("« عوده", callback_data="start_back")]])
     await m.message.edit_text(res, reply_markup=keyboard, disable_web_page_preview=True, parse_mode=enums.ParseMode.MARKDOWN)
