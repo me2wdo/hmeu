@@ -1,8 +1,3 @@
-#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @l2_2Y
-#𝙳𝙴𝚅 𝙰𝙱𝙳𝙾𝚘 : @II_U_6
-#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
-#𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
-
 from pyrogram import Client, filters, enums
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message, ReplyKeyboardMarkup,\
     KeyboardButton
@@ -19,7 +14,7 @@ async def startsudo(c: Client, m: Message):
         t = """💌╖اهلا بيك حبيبي آلمـطـور
 ⚙️╢ تقدر تتحكم باوامر البوت عن طريق
 🔍╢ الكيبورد اللي ظهرلك تحت ↘
-🔰╜ للدخول لقناة السورس [دوس هنا](t.me/I1_35)"""
+🔰╜ للدخول لقناة السورس [دوس هنا](t.me/l2_2Y)"""
         keyboard = ReplyKeyboardMarkup(keyboard=[
             [KeyboardButton(" قفل الكيبورد")],
             [KeyboardButton("تعطيل التواصل")] +
@@ -68,11 +63,11 @@ async def startsudo(c: Client, m: Message):
 async def start(c: Client, m: Message):
     await confirm_user(c, m)
     if m.chat.type == enums.ChatType.PRIVATE:
-        botname = get_db_botname() or "ميدو"
+        botname = get_db_botname() or "بودا"
         x = f"""
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 🎤╖ أهلآ بك عزيزي أنا بوت {botname}
-⚙️╢لتفعيل كيب الاعضاء اضغط /Medo 
+⚙️╢لتفعيل كيب الاعضاء اضغط /AbdoX 
 🫧╢ وظيفتي حماية المجموعات
 ✅╢ لتفعيل البوت عليك اتباع مايلي 
 🔘╢ أضِف البوت إلى مجموعتك
@@ -90,11 +85,11 @@ async def start(c: Client, m: Message):
 
 @Client.on_callback_query(filters.regex("^start_back$"))
 async def start_back(c: Client, m: CallbackQuery):
-    botname = get_db_botname() or "القائد"
+    botname = get_db_botname() or "بودا"
     x = f"""
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 🎤╖ أهلآ بك عزيزي أنا بوت {botname}
-⚙️╢لتفعيل كيب الاعضاء اضغط /Medo 
+⚙️╢لتفعيل كيب الاعضاء اضغط /AbdoX 
 🫧╢ وظيفتي حماية المجموعات
 ✅╢ لتفعيل البوت عليك اتباع مايلي 
 🔘╢ أضِف البوت إلى مجموعتك
@@ -108,13 +103,14 @@ async def start_back(c: Client, m: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex("^infos$"))
-       res = """
-╭──── • ‌✯ • ────╮
-𖥻 [SoUrCe BoDa](t.me/I1_35)
-𖥻 [G SoUrCe](t.me/CVCVCVUI)
-𖥻 [DeV SoUrCe](t.me/EU_ET)
-╰──── • ‌✯ • ────╯
-𖥻 WelCoMe To SoUrCe  Music .
+async def infos(c: Client, m: CallbackQuery):
+    res = """
+╭──── • 𖥻 • ────╮
+𖥻 [SoUrCe BoDa](t.me/l2_2Y)
+𖥻 [GrOuP SoUrCe](t.me/CVCVCVUI)
+𖥻 [DeV SoUrCe](t.me/II_U_6)
+╰──── • 𖥻 • ────╯
+𖥻 WelCoMe To SoUrCe BoDa Music .
         """
     keyboard = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton("« عوده", callback_data="start_back")]])
     await m.message.edit_text(res, reply_markup=keyboard, disable_web_page_preview=True, parse_mode=enums.ParseMode.MARKDOWN)
@@ -123,7 +119,3 @@ async def start_back(c: Client, m: CallbackQuery):
 @Client.on_callback_query(filters.regex("^commandss$"))
 async def commandsss(c: Client, m: CallbackQuery):
     await command2(c, m)
-#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @l2_2Y
-#𝙳𝙴𝚅 𝙰𝙱𝙳𝙾𝚘 : @II_U_6
-#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
-#𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
