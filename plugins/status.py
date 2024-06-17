@@ -1,7 +1,8 @@
-#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @l2_2Y
-#𝙳𝙴𝚅 𝙰𝙱𝙳𝙾𝚘 : @II_U_6
-#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
-#𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
+##########
+#By: @S550D 
+##########
+
+
 import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, CallbackQuery
@@ -22,9 +23,10 @@ async def status(c: Client, m: Message):
     ])
     await m.reply_text("◍ اليك قائمه الاستوريهات\n√", reply_markup=keyboard)
 
-#########################################################################################
-#########################################################################################
-
+#𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴 : @l2_2Y
+#𝙳𝙴𝚅 𝙰𝙱𝙳𝙾𝚘 : @II_U_6
+#𝚂𝚄𝙿𝙿𝙾𝚁𝚃 : @C6_6V1
+#𝙰𝙱𝙳𝙾𝚘 : تم التعديل بواسطة 🫧⋅
 @Client.on_callback_query(filters.regex("^love (\\d+)$"))
 async def love(c: Client, m: CallbackQuery):
     a = m.data.split(" ")
